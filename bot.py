@@ -37,7 +37,7 @@ async def on_message(message):
     "https://i.ytimg.com/vi/QBaIyCHGLlg/maxresdefault.jpg",
     ]
 
-    if message.author.id == 322969966309670912:
+    if message.author.id == 186975638094217216:
         embed = discord.Embed(title=random.choice(diegoTroll), color=discord.Color.dark_red())    
         embed.set_thumbnail(url=random.choice(images))
         await message.channel.send(f"{message.author.mention}")
@@ -53,7 +53,7 @@ async def append(ctx, user: discord.Member):
 
 @bot.command()
 async def forceclear(ctx, amount=1):
-    if ctx.author.id == 322969966309670912:
+    if ctx.author.id == 204983995774140416:
         await ctx.channel.purge(limit=amount)
         print(ctx.message.author, "attempted to clear", amount, "messages")
 
